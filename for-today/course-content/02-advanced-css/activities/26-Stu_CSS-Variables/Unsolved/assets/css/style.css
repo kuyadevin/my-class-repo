@@ -1,3 +1,8 @@
+:root {
+  --dark: #097eec;
+
+}
+
 body {
   font-size: 16px;
   display: flex;
@@ -19,7 +24,7 @@ h2 {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
+  background: var(--dark);
   color: #fff;
 }
 
@@ -29,7 +34,7 @@ nav {
 }
 
 nav a {
-  color: #13293d;
+  color: var(--dark);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -49,7 +54,7 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
+  background: var(--dark);
   color: #fff;
   margin-top: auto;
 }
