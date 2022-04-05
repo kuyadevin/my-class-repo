@@ -10,6 +10,8 @@ var child = {
     console.log(this.age + 10);
   },
 };
+child.ageTenYears();
+// Console.log should show 20
 
 var investor = {
   name: 'Cash Saver',
@@ -20,3 +22,4 @@ var investor = {
     },
   },
 };
+investor.investment.investmentGrowth()

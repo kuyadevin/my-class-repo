@@ -1,26 +1,26 @@
 // declare a variable named ourArray and assign an empty array to it
-
+var ourArray=[]
 
 // we can `push` values into an array with the push method. Documentation can be found here:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 
 // Let's push the number 1 into ourArray
-
+ourArray.push(1)
 
 // push the string "hello" into ourArray
-
+ourArray.push("ourArray")
 
 // push the boolean false into ourArray
-
+ourArray.push(Boolean=false)
 
 // push the number 84 into ourArray
-
+ourArray.push(84)
 
 // push the string "world" into our Array
-
+ourArray.push("world")
 
 // console log ourArray
-
+console.log(ourArray)
 
 
 // This seperator is here to make your console logs a little easier to read 
@@ -28,13 +28,13 @@
 console.log("--------------------------Seperator 1--------------------------");
 
 // declare a variable named oneToTen and assign it an array containing the numbers from 1 to 10
-
+var oneToTen= [1, 2 , 3, 4, 5, 6, 7, 8, 9, 10]
 
 // console log the element at index 4
-
+console.log(oneToTen[4])
 
 // console log the element at index 7
-
+console.log(oneToTen[7])
 
 
 
@@ -45,24 +45,42 @@ console.log("--------------------------Seperator 2--------------------------");
 // We've declared this array for you
 var numArray = [2, 65, 3, 7, 39, 22, 11, 94, 299, 9, 20, 21, 51, 37];
 // iterate through numArray and create an individual console log for every number greater than 50
-
+for (var i=0; i < numArray.length; i++) {
+  if (numArray[i] > 50){
+    console.log(numArray[i])
+  }
+}
 
 
 // iterate through numArray and create an alert that tells us 
 // the index of all the occurances of the number 11
-
+for (var i=0; i < numArray.length; i++){
+  if (numArray[i]===11){
+    alert(i)
+  }
+}
 
 
 // iterate through numArray and console log the sum of all the numbers
-
+for (var i=0; i < numArray.length; i++){
+  sum =sum+numArray[i];
+}
+console.log(sum);
 
 
 // iterate through numArray and console log the sum of all the numbers greater than 50
-
+for (var i=0; i < numArray.length; i++){
+  if (numArray[i] > 50){
+    sum = sum + numArray[i]
+  }
+}
+console.log(sum)
 
 
 // iterate through numArray and console log the sum of all the even numbers
-
+for (var i = 0; i < numArray.length; i++){
+  if 
+}
 
 
 // This seperator is here to make your console logs a little easier to read 
@@ -74,15 +92,28 @@ var fruits = [
   "Apple", "Orange", "Banana", "Pomelo", "Apple", "Kiwi", "Peach", "Banana", "Grape", "Tomato", 
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"];
 // iterate through fruits and console log the number of times "Apple" appears in the array
-
+var appleAppearance = 0
+for (var i=0; i < fruits.length; i++){
+  if (fruits[i] === "Apple"){
+    appleAppearance++
+  }
+} console.log(appleAppearance)
 
 
 // iterate through fruits and console log the number of times "Peach" appears in the array
-
+var peachAppearance = 0
+for (var i = 0; i < fruits.length ; i++){
+  if (fruits[i]==="Peach")
+  peachAppearance++
+} console.log(peachAppearance)
 
 
 // iterate through fruits and console log the number of fruits that start with "P" in the array
-
+var pFruitAppearance = 0
+for (var i = 0; i < fruits.length; i++){
+  if (fruits[i].charAt[0]==="p")
+  pFruitAppearance++
+}console.log(pFruitAppearance)
 
 
 // create a new empty array named uniqueFruits
