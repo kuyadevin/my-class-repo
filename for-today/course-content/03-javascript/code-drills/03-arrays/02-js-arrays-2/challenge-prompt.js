@@ -117,11 +117,13 @@ for (var i = 0; i < fruits.length; i++){
 
 
 // create a new empty array named uniqueFruits
-
+var uniqueFruits=[]
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
 // you should a shorter array without repeated values
-
+for (var i = 0; i < fruits.length; i++){
+  if (fruits[i])
+}
 
 
 // console log out your uniqueFruits array
