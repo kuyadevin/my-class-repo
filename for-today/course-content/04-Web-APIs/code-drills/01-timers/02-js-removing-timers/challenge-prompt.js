@@ -16,44 +16,54 @@ var two = setTimeout(log("Question1-2"), 1000 * 6);
 var three = setTimeout(log("Question1-3"), 1000 * 7);
 
 // remove the timers `one`, `two`, and `three`
-
+clearTimeout(one);
+clearTimeout(two);
+clearTimeout(three);
 
 
 console.log("==================== Question 02 ====================");
 // create a timer that logs "Hello" after 17 seconds
-
-
+var question2=setTimeout(log("Hello"), 1000*17);
 
 // remove the timer you just made
-
+clearTimeout(question2)
 
 
 console.log("==================== Question 03 ====================");
 // create a timer that logs "Goodbye" after 17 seconds
-
+var question3= setTimeout(log("Goodbye"), 1000*17);
 
 
 // create a timer that removes the "Goodbye" timer after 5 seconds
 // HINT: much like the `log` function we defined at the top of the page,
 // you're going to have to create a function that returns another function
-
-
+function remove3(){
+  return clearTimeout(question3)
+}
+setTimeout(remove3, 1000*5);
 
 console.log("==================== Question 04 ====================");
 // create a timer that logs "Part 1" after 3 seconds
-
+var question4=setTimeout(log("Part 1"),1000*3);
 
 
 // create a timer that removes the "Part 1" timer after 2 seconds and also
 // console logs out "Part 2" when it runs
-
+function remove4(){
+  console.log("Part 2");
+ return clearTimeout(question4);
+}
+var questionFourTwo=setTimeout(remove4, 1000*2)
 
 
 // create a timer that removes the "Part 2" timer after 1 second and also
 // console logs out "Part 3" when it runs
 
-
-
+function removePart2(){
+  console.log("Part 3");
+  return clearTimeout(remove4)
+}
+var questionFourThree=setTimeout(removePart2, 1000)
 console.log("==================== Question 05 ====================");
 var alertArray = [
   setTimeout(log("Question5-1"), 1000 * 5),
@@ -71,4 +81,6 @@ var alertArray = [
 
 // remove all the timers created by `alertArray`.
 
-
+for (i=0;i<alertArray.length;i++){
+  clearTimeout(alertArray[i]);
+}

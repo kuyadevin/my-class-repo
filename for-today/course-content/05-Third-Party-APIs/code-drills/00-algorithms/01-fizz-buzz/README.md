@@ -1,4 +1,4 @@
-# Fizz Buzz
+for # Fizz Buzz
 
 In this activity, you will be writing code to create a function that solves the [Fizz Buzz](https://en.wikipedia.org/wiki/Fizz_buzz) problem.
 

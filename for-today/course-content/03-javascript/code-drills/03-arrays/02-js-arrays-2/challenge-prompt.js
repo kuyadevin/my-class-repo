@@ -79,9 +79,11 @@ console.log(sum)
 
 // iterate through numArray and console log the sum of all the even numbers
 for (var i = 0; i < numArray.length; i++){
-  if 
+  if ((numArray[i])%2===0){
+  sum+=numArray[i];
+  }
 }
-
+console.log(sum)
 
 // This seperator is here to make your console logs a little easier to read 
 // by creating seperations between the different sections of the activity
@@ -147,7 +149,11 @@ var twoDimArray = [
 // another seperator for your convenience
 console.log("     first array      ");
 // iterate through the first array inside twoDimArray and console log all the numbers less than 25
-
+for (var i=0; i<twoDimArray[0].length;i++){
+  if (twoDimArray[0][i]<25){
+    console.log(twoDimArray[0][i])
+  }
+}
 
 
 // another seperator for your convenience

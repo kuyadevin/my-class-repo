@@ -86,10 +86,21 @@ var newArr = [2,1,3];
 
 // [1,2,3]
 
-function bubbleSort(arr) {
+function bubbleSort(unsortedArr) {
 
 // your code goes here
+for (var i=0; i < unsortedArr.length; i++){
 
+  for (var j =0; j< (unsortedArr.length -i-1); j++){
+    if (unsortedArr[j] > unsortedArr[j+1]){
+      var temp= unsortedArr[j]
+      unsortedArr[j]=arr[j+1]
+      unsortedArr[j+1]=temp
+    }
+  }
+}
+
+bubbleSort(unsortedArr)
 // Step One:
 // Q: What are you going to do?
 // A:

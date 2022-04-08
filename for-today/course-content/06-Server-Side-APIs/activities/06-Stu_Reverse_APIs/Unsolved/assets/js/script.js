@@ -2,6 +2,7 @@ var requestUrl = 'https://api.github.com/orgs/Netflix/repos';
 
 // JQuery AJAX
 // TODO: Comment on how AJAX returns an API call
+// Ajax allows web apps to make quick, incremental updates to the user interface without reloading the entire web browser
 $.ajax({
   url: requestUrl,
   method: 'GET',
@@ -12,6 +13,7 @@ $.ajax({
 
 // Browser Fetch Method
 // TODO: Comment on how Fetch returns an API call
+// It differs from ajx in that fetch won't reject on HTTP error status even if the response is HTTP 404 or 500. As soon as the server responds the promise will resolve normally and only rejects on network failure
 fetch(requestUrl)
   .then(function (response) {
     return response.json();

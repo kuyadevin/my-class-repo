@@ -9,7 +9,7 @@ $(document).ready(function () {
     //
     // Within the document, set an on click listener for the element with a class of "letterA"
 
-    
+    $(document)
         // When that element is clicked, append the string "A" to the `text-div` element
 
         
